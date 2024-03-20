@@ -58,21 +58,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         return dataModels.size();
     }
 
-    public void filter(String text) {
-        filteredList.clear();
-        if (TextUtils.isEmpty(text)) {
-            filteredList.addAll(dataModels);
-        } else {
-            text = text.toLowerCase().trim();
-            for (DataModel item : dataModels) {
-                if (item.getName().toLowerCase().contains(text)) {
-                    filteredList.add(item);
-                }
-            }
-        }
-        //notifyDataSetChanged();
-    }
-
     public ArrayList<DataModel> getDataList() {
         return dataModels;
     }

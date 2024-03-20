@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity implements OnClickInterface 
             }
         });
 
-        adapter = new Adapter(this, dataModels);
-        recyclerView.setAdapter(adapter);
+        //adapter = new Adapter(this, dataModels);
+        //recyclerView.setAdapter(adapter);
     }
     public void clickOnCharacter(View view){
         String name;
